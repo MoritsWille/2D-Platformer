@@ -1,5 +1,6 @@
 ﻿using UnityEngine;
 using System.Collections;
+using System.Timers;
 
 public class PlayerScript : MonoBehaviour {
 
@@ -9,21 +10,36 @@ public class PlayerScript : MonoBehaviour {
 	public float minYPos;
 	string deathMessage = "Welcome to hell!";
 	bool showDeathMessage = false;
-	
+	public GUIStyle screenMessageSize;
+
+	void start ()
+	{
+
+	}
+
 	void OnGUI()
 	{
 		if (showDeathMessage == true)
 		{
-			deathMessage = GUI.TextField (new Rect (10, 10, 200, 20), deathMessage);
+			GUI.Label (new Rect (600, 100, 200, 20), deathMessage, screenMessageSize);
 		}
+	}
+	IEnumerator wait()
+	{
+		yield return new WaitForSeconds (2f);
+		showDeathMessage = false;
 	}
 	
 	void Update ()
 	{
-		if (transform.position.y < minYPos)
+		if (transform.position.y < -5)
 		{
 			showDeathMessage = true;
-			transform.position = new Vector3 (respawnX, respawnY, respawnZ);
+			StartCoroutine("wait");
+			if (transform.position.y < minYPos)
+			{
+				transform.position = new Vector3 (respawnX, respawnY, respawnZ);
+			}
 		}
 	}
 }
