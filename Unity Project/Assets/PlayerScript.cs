@@ -8,7 +8,8 @@ public class PlayerScript : MonoBehaviour {
 	public float respawnY;
 	public float respawnZ;
 	public float minYPos;
-	string deathMessage = "Welcome to hell!";
+	public Transform mainCam;
+	string deathMessage = "Player died";
 	bool showDeathMessage = false;
 	public GUIStyle screenMessageSize;
 
@@ -21,7 +22,7 @@ public class PlayerScript : MonoBehaviour {
 	{
 		if (showDeathMessage == true)
 		{
-			GUI.Label (new Rect (600, 100, 200, 20), deathMessage, screenMessageSize);
+			GUI.Label (new Rect (mainCam.camera.pixelWidth / 2, mainCam.camera.pixelHeight / 2, 200, 20), deathMessage, screenMessageSize);
 		}
 	}
 	IEnumerator wait()

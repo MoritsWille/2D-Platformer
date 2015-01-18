@@ -9,5 +9,8 @@ public class MenuGui : MonoBehaviour
 		Application.LoadLevel("2dPlatformer");
 	}
 
-
+	public void GotoMainMenu ()
+	{
+		Application.LoadLevel ("Menu");
+	}
 }
