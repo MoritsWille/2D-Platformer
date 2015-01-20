@@ -1,6 +1,6 @@
 ﻿using UnityEngine;
+using UnityEngine.UI;
 using System.Collections;
-using System.Timers;
 
 public class PlayerScript : MonoBehaviour {
 
@@ -9,12 +9,18 @@ public class PlayerScript : MonoBehaviour {
 	public float respawnZ;
 	public float minYPos;
 	public Transform mainCam;
-	string deathMessage = "Player died";
+	string deathMessage;
 	bool showDeathMessage = false;
 	public GUIStyle screenMessageSize;
 
-	void start ()
+	public void setDeathMessage ()
 	{
+		GameObject go = GameObject.Find("GlobalSettings");
+		Settings settings = (Settings)go.GetComponent (typeof(Settings));
+		
+		deathMessage = settings.UserName + " died";
+
+		Debug.Log (deathMessage);
 
 	}
 
