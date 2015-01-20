@@ -60,6 +60,7 @@
      <Compile Include="Assets\Settings.cs" />
      <Compile Include="Assets\Start1.cs" />
      <Compile Include="Assets\StickToCorner.cs" />
+     <Compile Include="Assets\UserName.cs" />
  <Reference Include="UnityEngine.UI">
  <HintPath>C:/Program Files (x86)/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/4.6.1/UnityEngine.UI.dll</HintPath>
  </Reference>

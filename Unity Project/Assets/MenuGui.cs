@@ -13,4 +13,8 @@ public class MenuGui : MonoBehaviour
 	{
 		Application.LoadLevel ("Menu");
 	}
+	public void GotoOpTions ()
+	{
+		Application.LoadLevel ("Options");
+	}
 }
