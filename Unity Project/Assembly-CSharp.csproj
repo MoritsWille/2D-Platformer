@@ -58,7 +58,7 @@
      <Compile Include="Assets\Sample Assets\2D\Scripts\PlatformerCharacter2D.cs" />
      <Compile Include="Assets\Sample Assets\2D\Scripts\Restarter.cs" />
      <Compile Include="Assets\Settings.cs" />
-     <Compile Include="Assets\Start1.cs" />
+     <Compile Include="Assets\StartScript01.cs" />
      <Compile Include="Assets\StickToCorner.cs" />
      <Compile Include="Assets\UserName.cs" />
  <Reference Include="UnityEngine.UI">

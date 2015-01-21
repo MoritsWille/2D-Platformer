@@ -1,52 +1,39 @@
 ﻿using UnityEngine;
-using UnityEngine.UI;
 using System.Collections;
 
 public class PlayerScript : MonoBehaviour {
 
-	public float respawnX;
-	public float respawnY;
-	public float respawnZ;
-	public float minYPos;
-	public Transform mainCam;
-	string deathMessage;
+	string deathMessage = UserName + " died ;(";
 	bool showDeathMessage = false;
-	public GUIStyle screenMessageSize;
-
-	public void setDeathMessage ()
+	public GUIStyle deathMessageStyle;
+	public GameObject mainCam;
+	
+	public void GetUserName ()
 	{
 		GameObject go = GameObject.Find("GlobalSettings");
-		Settings settings = (Settings)go.GetComponent (typeof(Settings));
-		
-		deathMessage = settings.UserName + " died";
+		Settings settings = (Settings) go.GetComponent(typeof(Settings));
 
-		Debug.Log (deathMessage);
-
+		string UserName = settings.UserName;
 	}
 
-	void OnGUI()
-	{
-		if (showDeathMessage == true)
-		{
-			GUI.Label (new Rect (mainCam.camera.pixelWidth / 2, mainCam.camera.pixelHeight / 2, 200, 20), deathMessage, screenMessageSize);
-		}
-	}
-	IEnumerator wait()
-	{
-		yield return new WaitForSeconds (2f);
-		showDeathMessage = false;
-	}
-	
 	void Update ()
 	{
-		if (transform.position.y < -5)
+		if (transform.position.y < -15)
 		{
 			showDeathMessage = true;
-			StartCoroutine("wait");
-			if (transform.position.y < minYPos)
+			if (transform.position.y < -40)
 			{
-				transform.position = new Vector3 (respawnX, respawnY, respawnZ);
+				transform.position = new Vector3 (7.04f, 0, 0);
+				showDeathMessage = false;
 			}
 		}
 	}
+
+	void OnGUI ()
+		{
+			if (showDeathMessage == true)
+			{
+				GUI.Label (new Rect (0,0,100,50), deathMessage, deathMessageStyle);
+			}
+		}
 }

@@ -10,6 +10,7 @@ TextureImporter:
     21300010: EnvironmentSpriteAtlas_5
     21300012: EnvironmentSpriteAtlas_6
     21300014: EnvironmentSpriteAtlas_7
+    21300016: EnvironmentSpriteAtlas_8
   serializedVersion: 2
   mipmaps:
     mipMapMode: 0
@@ -59,7 +60,7 @@ TextureImporter:
         width: 512
         height: 91
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: EnvironmentSpriteAtlas_1
       rect:
@@ -79,7 +80,7 @@ TextureImporter:
         width: 512
         height: 61
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: EnvironmentSpriteAtlas_3
       rect:
@@ -99,7 +100,7 @@ TextureImporter:
         width: 24
         height: 59
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: EnvironmentSpriteAtlas_5
       rect:
@@ -109,7 +110,7 @@ TextureImporter:
         width: 21
         height: 59
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: EnvironmentSpriteAtlas_6
       rect:
@@ -119,7 +120,7 @@ TextureImporter:
         width: 19
         height: 59
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: EnvironmentSpriteAtlas_7
       rect:
@@ -128,6 +129,16 @@ TextureImporter:
         y: 329
         width: 512
         height: 92
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: EnvironmentSpriteAtlas_8
+      rect:
+        serializedVersion: 2
+        x: 28
+        y: 170
+        width: 24
+        height: 2
       alignment: 0
       pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
