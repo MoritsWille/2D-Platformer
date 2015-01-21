@@ -3,17 +3,17 @@ using System.Collections;
 
 public class PlayerScript : MonoBehaviour {
 
-	string deathMessage = UserName + " died ;(";
+	string deathMessage;
 	bool showDeathMessage = false;
 	public GUIStyle deathMessageStyle;
 	public GameObject mainCam;
 	
-	public void GetUserName ()
+	void Start ()
 	{
 		GameObject go = GameObject.Find("GlobalSettings");
 		Settings settings = (Settings) go.GetComponent(typeof(Settings));
 
-		string UserName = settings.UserName;
+		deathMessage = settings.UserName + " died ;(";
 	}
 
 	void Update ()
@@ -33,7 +33,7 @@ public class PlayerScript : MonoBehaviour {
 		{
 			if (showDeathMessage == true)
 			{
-				GUI.Label (new Rect (0,0,100,50), deathMessage, deathMessageStyle);
+			GUI.Label (new Rect (mainCam.camera.pixelWidth / 2, mainCam.camera.pixelHeight / 2.5f, 100,50), deathMessage, deathMessageStyle);
 			}
 		}
 }
