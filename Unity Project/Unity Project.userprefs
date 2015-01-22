@@ -1,11 +1,12 @@
 ﻿<Properties>
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\PlayerScript.cs">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Settings.cs">
     <Files>
-      <File FileName="Assets\PlayerScript.cs" Line="36" Column="89" />
-      <File FileName="Assets\UserName.cs" Line="16" Column="1" />
+      <File FileName="..\..\..\Github\2D-Platformer\Unity Project\Assets\PlayerScript.cs" Line="47" Column="1" />
+      <File FileName="Assets\PlayerScript.cs" Line="47" Column="1" />
+      <File FileName="Assets\UserName.cs" Line="1" Column="1" />
       <File FileName="Assets\MenuGui.cs" Line="1" Column="1" />
-      <File FileName="Assets\Settings.cs" Line="1" Column="1" />
+      <File FileName="Assets\Settings.cs" Line="8" Column="37" />
       <File FileName="Assets\StartScript01.cs" Line="1" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>

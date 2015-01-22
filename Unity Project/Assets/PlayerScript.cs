@@ -13,7 +13,14 @@ public class PlayerScript : MonoBehaviour {
 		GameObject go = GameObject.Find("GlobalSettings");
 		Settings settings = (Settings) go.GetComponent(typeof(Settings));
 
-		deathMessage = settings.UserName + " died ;(";
+		if (settings.UserName == "")
+		{
+			deathMessage = "Player died ;(";
+		}
+		else 
+		{
+			deathMessage = settings.UserName + " died ;(";
+		}
 	}
 
 	void Update ()
