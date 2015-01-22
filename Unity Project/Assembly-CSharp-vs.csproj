@@ -51,6 +51,7 @@
      <Compile Include="Assets\Parallaxing01.cs" />
      <Compile Include="Assets\Parallaxing02.cs" />
      <Compile Include="Assets\Parallaxing03.cs" />
+     <Compile Include="Assets\PlayerControl.cs" />
      <Compile Include="Assets\PlayerScript.cs" />
      <Compile Include="Assets\Sample Assets\2D\Scripts\Camera2DFollow.cs" />
      <Compile Include="Assets\Sample Assets\2D\Scripts\CameraFollow.cs" />

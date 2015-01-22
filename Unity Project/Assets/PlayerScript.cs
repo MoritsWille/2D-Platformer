@@ -7,13 +7,13 @@ public class PlayerScript : MonoBehaviour {
 	bool showDeathMessage = false;
 	public GUIStyle deathMessageStyle;
 	public GameObject mainCam;
-	
+		
 	void Start ()
 	{
 		GameObject go = GameObject.Find("GlobalSettings");
 		Settings settings = (Settings) go.GetComponent(typeof(Settings));
 
-		if (settings.UserName == "")
+		if (settings.UserName == "" || settings.UserName == null)
 		{
 			deathMessage = "Player died ;(";
 		}
