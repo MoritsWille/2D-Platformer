@@ -481,6 +481,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   InputField: {fileID: 1964500667}
+  Slider: {fileID: 1694121626}
 --- !u!1 &573055150
 GameObject:
   m_ObjectHideFlags: 0
@@ -2870,6 +2871,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   InputField: {fileID: 1964500667}
+  Slider: {fileID: 0}
 --- !u!4 &1925636880
 Transform:
   m_ObjectHideFlags: 0

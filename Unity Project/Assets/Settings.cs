@@ -6,6 +6,7 @@ public class Settings : MonoBehaviour {
 
 	public string UserName;
 	string path = @"Data\NickName.txt";
+	public float MVolume;
 
 	// Use this for initialization
 	void Start () {

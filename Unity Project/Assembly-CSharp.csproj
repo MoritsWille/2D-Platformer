@@ -46,8 +46,10 @@
 	</Reference>
   </ItemGroup>
   <ItemGroup>
+     <Compile Include="Assets\BeeScript.cs" />
      <Compile Include="Assets\Controller.cs" />
      <Compile Include="Assets\MenuGui.cs" />
+     <Compile Include="Assets\MusicVolume.cs" />
      <Compile Include="Assets\Parallaxing01.cs" />
      <Compile Include="Assets\Parallaxing02.cs" />
      <Compile Include="Assets\Parallaxing03.cs" />
